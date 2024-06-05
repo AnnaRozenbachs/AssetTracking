@@ -26,7 +26,7 @@ void RunApplication()
                 assets.Add(computer);
 
                 Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine("Asset är tillagd");
+                Console.WriteLine("Asset is created");
                 Console.ForegroundColor = ConsoleColor.White;
                 break;
             case "2":
@@ -35,7 +35,7 @@ void RunApplication()
                 assets.Add(phone);
 
                 Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine("Asset är tillagd");
+                Console.WriteLine("Asset is created");
                 Console.ForegroundColor = ConsoleColor.White;
                 break;
             case "3":
@@ -46,7 +46,6 @@ void RunApplication()
     }
     catch(Exception e)
     {
-
         Console.ForegroundColor = ConsoleColor.Red;
         Console.WriteLine(e.Message);
         Console.ForegroundColor = ConsoleColor.White;
