@@ -17,7 +17,7 @@ namespace AssetTracking.Services
             var model = Console.ReadLine();
             Console.WriteLine("Select a office - (1) Sweden (2) USA (3) Italy");
             var office = Console.ReadLine();
-            Console.WriteLine("Enter a purchasedate:");
+            Console.WriteLine("Enter a purchasedate: ");
             var purchaseDate = Console.ReadLine();
             Console.WriteLine("Enter a price: ");
             var purchasePrice = Console.ReadLine();

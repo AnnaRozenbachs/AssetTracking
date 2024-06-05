@@ -8,15 +8,13 @@ namespace AssetTracking.Models
 {
     public class Computer : Asset
     {
-        public Computer(string model, string brand, string office, DateTime purchasedate, decimal price, string currency, decimal localprice)
+        public Computer(string model, string brand, string office, DateTime purchasedate, decimal price)
         {
             Model = model;
             Brand = brand;
             Office = office;
             PurchaseDate = purchasedate;
             Price = price;
-            Currency = currency;
-            LocalPrice = localprice;
 
         }
     }

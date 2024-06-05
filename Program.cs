@@ -22,7 +22,7 @@ void RunApplication()
         {
             case "1":
                 inputs = assetHelper.GetAssetInputs();
-                var computer = new Computer(inputs.Model, inputs.Brand, assetHelper.Office(inputs.Office), DateTime.Parse(inputs.PurchaseDate), decimal.Parse(inputs.PurchasePrice), "0", 0);
+                var computer = new Computer(inputs.Model, inputs.Brand, assetHelper.Office(inputs.Office), DateTime.Parse(inputs.PurchaseDate), decimal.Parse(inputs.PurchasePrice));
                 assets.Add(computer);
 
                 Console.ForegroundColor = ConsoleColor.Green;
@@ -31,7 +31,7 @@ void RunApplication()
                 break;
             case "2":
                 inputs = assetHelper.GetAssetInputs();
-                var phone = new Phone(inputs.Model, inputs.Brand, assetHelper.Office(inputs.Office), DateTime.Parse(inputs.PurchaseDate), decimal.Parse(inputs.PurchasePrice), "0", 0);
+                var phone = new Phone(inputs.Model, inputs.Brand, assetHelper.Office(inputs.Office), DateTime.Parse(inputs.PurchaseDate), decimal.Parse(inputs.PurchasePrice));
                 assets.Add(phone);
 
                 Console.ForegroundColor = ConsoleColor.Green;
