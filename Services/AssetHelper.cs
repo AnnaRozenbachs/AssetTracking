@@ -106,7 +106,7 @@ namespace AssetTracking.Services
                 "Currency".PadRight(10) +  
                 "Local price");
 
-            var sortedAssets = assets.OrderBy(a=>a.Office).ThenBy(a=>a.PurchaseDate);
+            var sortedAssets = assets.OrderByDescending(a=>a.Office).ThenByDescending(a=>a.PurchaseDate);
             foreach (Asset asset in sortedAssets)
             {
                 var localPrice = CalculateCurrency(asset).LocalPrice;
